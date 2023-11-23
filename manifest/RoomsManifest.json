@@ -1,0 +1,372 @@
+{
+  "SupportingTexts": {
+    "HomePageText": "Run and explore DocuSign Rooms API code examples with Authorization Code Grant or JWT Grant authentication",
+    "ViewSourceFile": "View source file {0} on GitHub.",
+    "APIMethodUsed": "API method used:",
+    "APIMethodUsedPlural": "API methods used:",
+    "SubmitButton": "Submit",
+    "ContinueButton": "Continue",
+    "HomeButton": "Home",
+    "LoginButton": "Login",
+    "LogoutButton": "Logout",
+    "ChangeAPITypeButton": "Change API Type",
+    "WelcomeText": "Welcome {0} (Account: {1})",
+    "LoginPage": {
+        "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
+        "LoginButton": "Authenticate with DocuSign",
+        "LoginHelperText": "You need to authenticate with DocuSign to continue your request."
+    },
+    "SelectAPIPage": {
+        "SelectAPIHeader": "<h1 class='display-4'>Please choose an API type</h1><label for='api_type'>Please choose an API type</label>",
+        "SelectAPIButton": "Choose your desired API"
+    },
+    "HelpingTexts": {
+        "EmailWontBeShared": "We'll never share your email with anyone else.",
+        "PhoneNumberWontBeShared": "We'll never share your phone number with anyone else.",
+        "CCEmailShouldDifferFromSigner": "The email for the cc recipient must be different from the signer's email.",
+        "AccessCodeText": "Provide this string to a recipient that is different such as in person or by mail or via different email.",
+        "CountryCodeText": "The country code for the phone below",
+        "ChooseDateInTheFuture": "Please choose a date in the future",
+        "PhoneNumberWillBeNotified": "This phone number will receive a notification."
+    }
+  },
+  "Groups": [
+    {
+      "Name": "Rooms examples",
+      "Examples": [
+        {
+          "ExampleNumber": 1,
+          "ExampleName": "Create a room with data",
+          "ExampleDescription": "Demonstrates how to create a DocuSign room that contains populated data.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/CreateRoom",
+              "PathName": "Rooms::CreateRoom"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Roles/Roles/GetRoles",
+              "PathName": "Roles::GetRoles"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room name",
+                  "InputPlaceholder": "Room name"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
+        },
+        {
+          "ExampleNumber": 2,
+          "ExampleName": "Create a room with a template",
+          "ExampleDescription": "Demonstrates how to create a DocuSign room using a predefined template.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/CreateRoom",
+              "PathName": "Rooms::CreateRoom"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/RoomTemplates/RoomTemplates/GetRoomTemplates",
+              "PathName": "RoomTemplates::GetRoomTemplates"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Roles/Roles/GetRoles",
+              "PathName": "Roles::GetRoles"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "RedirectText": "<p>Problem: you don't have any templates. Please first create a form template using <a href='https://demo.rooms.docusign.com/admin/company/roomtemplates' target='_blank'>DocuSign Admin.</a> <br />Thank you.</p>"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room name",
+                  "InputPlaceholder": "Room name"
+                },
+                {
+                  "InputName": "Template"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
+        },
+        {
+          "ExampleNumber": 3,
+          "ExampleName": "Export data from a room",
+          "ExampleDescription": "Demonstrates how to export data from a room.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+              "PathName": "Rooms::GetRooms"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRoomFieldData",
+              "PathName": "Rooms::GetRoomFieldData"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 1,
+                "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from the Rooms::GetRoomFieldData method:"
+        },
+        {
+          "ExampleNumber": 4,
+          "ExampleName": "Add a form to a room",
+          "ExampleDescription": "Demonstrates how to attach a form to a room",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+              "PathName": "Rooms::GetRooms"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Forms/FormLibraries/GetFormLibraries",
+              "PathName": "Forms::GetFormLibraries"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Forms/FormLibraries/GetFormLibraryForms",
+              "PathName": "Forms::GetFormLibraryForms"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/AddFormToRoom",
+              "PathName": "Rooms::AddFormToRoom"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 1,
+                "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
+            }
+          ],
+          "CustomErrorTexts": [
+            {
+                "ErrorMessageCheck": "FORMS_INTEGRATION_NOT_ENABLED",
+                "ErrorMessage": "<p>Problem: This example is not available.</p><p>DocuSign Forms is not enabled for your DocuSign account. Please contact <a href='mailto:roomssandbox@docusign.com'>DocuSign Rooms Support</a> to enable Forms.</p>"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room"
+                },
+                {
+                  "InputName": "Form"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from the Rooms::AddFormToRoom method:"
+        },
+        {
+          "ExampleNumber": 5,
+          "ExampleName": "Get a room with a filter",
+          "ExampleDescription": "Demonstrates how to return rooms filtered by your parameters.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+              "PathName": "Rooms::GetRooms"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Start date"
+                },
+                {
+                  "InputName": "End date"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from the Rooms::GetRooms method:"
+        },
+        {
+          "ExampleNumber": 6,
+          "ExampleName": "Create and embed an external form fill session",
+          "ExampleDescription": "Demonstrates how to create and embed an external form fill session.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+              "PathName": "Rooms::GetRooms"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetDocuments",
+              "PathName": "Rooms::GetDocuments"
+            },
+            {
+              "Path": "https://developers.docusign.com/rooms-api/reference/Forms/ExternalFormFillSessions/CreateExternalFormFillSession",
+              "PathName": "Forms::CreateExternalFormFillSession"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 4,
+              "RedirectText": "<p>Problem: Selected room does not has any forms. Add a form to a room using <a {0}>example 4.</a> <br /></p>"
+            },
+            {
+              "CodeExampleToRedirectTo": 1,
+              "RedirectText": "<p>Problem: Create a room using <a {0}>example 1.</a> <br /></p>"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select a form document</p>",
+              "Inputs": [
+                {
+                  "InputName": "Forms"
+                }
+              ]
+            },
+            {
+              "FormName": "<p>Please select a room</p>",
+              "Inputs": [
+                {
+                  "InputName": "Rooms",
+                  "InputPlaceholder": "Select a room"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from the ExternalFormFillSessions:CreateExternalFormFillSession:"
+        },
+        {
+          "ExampleNumber": 7,
+          "ExampleName": "Create a form group",
+          "ExampleDescription": "Demonstrates how to create a form group for your DocuSign Rooms for Real Estate account.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/how-to/create-form-group",
+              "PathName": "Rooms::CreateFormGroup"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Form group name",
+                  "InputPlaceholder": "Form group name"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "The Form Group \"{0}\" has been created!"
+        },
+        {
+          "ExampleNumber": 8,
+          "ExampleName": "Grant office access to a form group",
+          "ExampleDescription": "Demonstrates how to assign an office to a form group for your DocuSign Rooms for Real Estate account.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/how-to/access-form-group",
+              "PathName": "Rooms::AccessFormGroup"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/reference/forms/formgroups/getformgroups",
+              "PathName": "FormGroups::GetFormGroups"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/reference/offices/offices/getoffices",
+              "PathName": "Offices::GetOffices"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 7,
+              "RedirectText": "<p>Problem: please first create a form group using <a {0}>example 7.</a> <br />Thank you.</p>"
+            },
+            {
+              "RedirectText": " <p>Problem: please first create an office</p>"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select an office and a form group</p>",
+              "Inputs": [
+                {
+                  "InputName": "Form group",
+                  "InputPlaceholder": "Please select a form group"
+                },
+                {
+                  "InputName": "Office",
+                  "InputPlaceholder": "Please select an office"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Office \"{0}\" has been assigned to Form Group \"{1}\""
+        },
+        {
+          "ExampleNumber": 9,
+          "ExampleName": "Assign a form to a form group",
+          "ExampleDescription": "Demonstrates how to assign a form to a form group for your DocuSign Rooms for Real Estate account.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/how-to/assign-form-group",
+              "PathName": "Rooms::AssignFormGroup"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/reference/forms/formgroups/getformgroups",
+              "PathName": "FormGroups::GetFormGroups"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/rooms-api/reference/forms/formlibraries/getformlibraries",
+              "PathName": "FormLibraries:GetFormLibraries"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 7,
+              "RedirectText": "<p>Problem: please first create a form group using <a {0}>example 7.</a> <br />Thank you.</p>"
+            },
+            {
+              "RedirectText": "<p>Problem: please first create a form. <br />Thank you.</p>"
+            }
+          ],
+          "CustomErrorTexts": [
+            {
+                "ErrorMessageCheck": "Unhandled response type.",
+                "ErrorMessage": "Response is empty and could not be cast to FormGroupFormToAssign. Please contact DocuSign support"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select an office and a form group</p>",
+              "Inputs": [
+                {
+                  "InputName": "Form group",
+                  "InputPlaceholder": "Please select a form group"
+                },
+                {
+                  "InputName": "Form",
+                  "InputPlaceholder": "Please select a form"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Form \"{0}\" has been assigned to Form Group \"{1}\"!"
+        }
+      ]
+    }
+  ]
+}

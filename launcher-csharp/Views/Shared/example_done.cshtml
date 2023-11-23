@@ -1,0 +1,22 @@
+﻿<h2>@ViewBag.h1</h2>
+<p>@Html.Raw(ViewBag.message)</p>
+
+@if (ViewBag.Locals != null && ViewBag.Locals.Json != null)
+{
+    <!-- Data from the server -->
+    <div id="server_json_data" data-server-json-data='{"json": @ViewBag.Locals.Json }' class="hidden"></div>
+    <p><pre class="json-display"><code id="json-display">@ViewBag.Locals.Json</code></pre></p>
+}
+
+@if (ViewBag.AdditionalLink != null)
+{
+    <p><a href="@ViewBag.AdditionalLink">@ViewBag.AdditionalLinkText</a></p>
+}
+@if (ViewBag.ConfirmAdditionalLink != null)
+{
+    <p><a href="@ViewBag.ConfirmAdditionalLink">@Html.Raw(ViewBag.SupportingTexts.ContinueButton)</a></p>
+}
+@if (ViewBag.OnlyConfirmAdditionalLink == null)
+{
+    <p><a href="/?egName=home">@Html.Raw(ViewBag.SupportingTexts.ContinueButton)</a></p>
+}

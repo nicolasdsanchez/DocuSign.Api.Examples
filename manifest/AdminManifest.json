@@ -1,0 +1,309 @@
+{
+  "SupportingTexts": {
+    "HomePageText": "Run and explore DocuSign Admin API code examples with Authorization Code Grant or JWT Grant authentication",
+    "ViewSourceFile": "View source file {0} on GitHub.",
+    "APIMethodUsed": "API method used:",
+    "APIMethodUsedPlural": "API methods used:",
+    "SubmitButton": "Submit",
+    "ContinueButton": "Continue",
+    "HomeButton": "Home",
+    "LoginButton": "Login",
+    "LogoutButton": "Logout",
+    "ChangeAPITypeButton": "Change API Type",
+    "WelcomeText": "Welcome {0} (Account: {1})",
+    "LoginPage": {
+        "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
+        "LoginButton": "Authenticate with DocuSign",
+        "LoginHelperText": "You need to authenticate with DocuSign to continue your request."
+    },
+    "SelectAPIPage": {
+        "SelectAPIHeader": "<h1 class='display-4'>Please choose an API type</h1><label for='api_type'>Please choose an API type</label>",
+        "SelectAPIButton": "Choose your desired API"
+    },
+    "HelpingTexts": {
+        "EmailWontBeShared": "We'll never share your email with anyone else.",
+        "PhoneNumberWontBeShared": "We'll never share your phone number with anyone else.",
+        "CCEmailShouldDifferFromSigner": "The email for the cc recipient must be different from the signer's email.",
+        "AccessCodeText": "Provide this string to a recipient that is different such as in person or by mail or via different email.",
+        "CountryCodeText": "The country code for the phone below",
+        "ChooseDateInTheFuture": "Please choose a date in the future",
+        "PhoneNumberWillBeNotified": "This phone number will receive a notification."
+    }
+  },
+  "Groups": [
+    {
+      "Name": "Admin examples",
+      "Examples": [
+        {
+          "ExampleNumber": 1,
+          "ExampleName": "Create a new active eSignature user",
+          "ExampleDescription": "Demonstrates how to create a new eSignature user and activate their account automatically.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/accounts/accountpermissionprofiles/list",
+              "PathName": "AccountPermissionProfiles::list"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/usergroups/groups/list",
+              "PathName": "Groups::list"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/createuser",
+              "PathName": "eSignUserManagement::createUser"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "User name",
+                  "InputPlaceholder": "PatJohnson"
+                },
+                {
+                  "InputName": "First name",
+                  "InputPlaceholder": "Pat"
+                },
+                {
+                  "InputName": "Last name",
+                  "InputPlaceholder": "Johnson"
+                },
+                {
+                  "InputName": "Email",
+                  "InputPlaceholder": "pat@example.com"
+                },
+                {
+                  "InputName": "eSignature permission profile"
+                },
+                {
+                  "InputName": "eSignature group"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from eSignUserManagement:createUser method:"
+        },
+        {
+          "ExampleNumber": 2,
+          "ExampleName": "Create a new active user for CLM and eSignature",
+          "ExampleDescription": "Demonstrates how to create a new DocuSign user (valid for both CLM and eSignature APIs) and activate their account automatically.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getproductpermissionprofiles",
+              "PathName": "MultiProductUserManagement::getProductPermissionProfiles"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getdsgroups",
+              "PathName": "MultiProductUserManagement::getDsGroups"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/addorupdateuser",
+              "PathName": "MultiProductUserManagement::addOrUpdateUser"
+            }
+          ],
+          "CustomErrorTexts": [
+            {
+              "ErrorMessage": "You do not have any groups set in your DocuSign Admin. Please go to DocuSign Admin and create a group to use this code example."
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "User Name",
+                  "InputPlaceholder": "User Name for the new user"
+                },
+                {
+                  "InputName": "First name",
+                  "InputPlaceholder": "First Name of the new user"
+                },
+                {
+                  "InputName": "Last name",
+                  "InputPlaceholder": "Last Name of the new user"
+                },
+                {
+                  "InputName": "Email",
+                  "InputPlaceholder": "Email address of the new user"
+                },
+                {
+                  "InputName": "eSignature Permission Profile"
+                },
+                {
+                  "InputName": "CLM Permission Profile"
+                },
+                {
+                  "InputName": "DocuSign Admin Group"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from MultiProductUserManagement:addOrUpdateUser method:"
+        },
+        {
+          "ExampleNumber": 3,
+          "ExampleName": "Bulk export user data",
+          "ExampleDescription": "Demonstrates how to bulk export user accounts within an organization into a CSV (comma-separated value) file.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userexport/createuserlistexport",
+              "PathName": "UserExport::createUserListExport"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userexport/getuserlistexport",
+              "PathName": "UserExport::getUserListExport"
+            }
+          ],
+          "ResultsPageText": "User data exported to {0}. </br> Results from UserExport:getUserListExport:"
+        },
+        {
+          "ExampleNumber": 4,
+          "ExampleName": "Add users via bulk import",
+          "ExampleDescription": "Demonstrates how to audit the users in your account by retrieving the profiles of users that were modified after a specified date.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userimport/addbulkuserimport",
+              "PathName": "UserImport::addBulkUserImport"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userimport/getbulkuserimportrequest",
+              "PathName": "UserImport::getBulkUserImportRequest"
+            }
+          ],
+          "ResultsPageText": "Results from UserImport:addBulkUserImport method:",
+          "AdditionalPage": [
+            {
+              "Name": "file_state_success",
+              "ResultsPageText": "Results from UserImport:addBulkUserImport method:"
+            }
+          ]
+        },
+        {
+          "ExampleNumber": 5,
+          "ExampleName": "Audit users",
+          "ExampleDescription": "Demonstrates how to audit the users in your account by retrieving the profiles of users that were modified after a specified date.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/users/getusers",
+              "PathName": "Users::getUsers"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
+              "PathName": "eSignUserManagement::getUserProfiles"
+            }
+          ],
+          "ResultsPageText": "Results from eSignUserManagement:getUserProfiles method:"
+        },
+        {
+          "ExampleNumber": 6,
+          "ExampleName": "Retrieve the user's DocuSign profile using an email address",
+          "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s email address.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
+              "PathName": "MultiProductUserManagement::getUserDSProfilesByEmail"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Email address",
+                  "InputPlaceholder": "example@example.com"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from MultiProductUserManagement:getUserDSProfilesByEmail method:"
+        },
+        {
+          "ExampleNumber": 7,
+          "ExampleName": "Retrieve the user's DocuSign profile using a User ID",
+          "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s User ID.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
+              "PathName": "MultiProductUserManagement::getUserDSProfile"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "User ID",
+                  "InputPlaceholder": "00000000-0000-0000-0000-000000000000"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from MultiProductUserManagement:getUserDSProfile method:"
+        },
+        {
+          "ExampleNumber": 8,
+          "ExampleName": "Update user product permission profiles using an email address",
+          "ExampleDescription": "Demonstrates how to update user product permission profiles. There may only be one permission profile assigned to a user per product.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getproductpermissionprofiles",
+              "PathName": "MultiProductUserManagement::getProductPermissionProfiles"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/adduserproductpermissionprofilesbyemail",
+              "PathName": "MultiProductUserManagement::addUserProductPermissionProfilesByEmail"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 2,
+                "RedirectText": "<p>Problem: You do not have the user to change permissions for. Go to example#2 and create one: <a {0}>create active CLM/eSign User.</a> <br/></p>"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Update user product permission profile for the following email: {0}</p>",
+              "Inputs": [
+                {
+                  "InputName": "Choose a product for which you want to update the permission profile"
+                },
+                {
+                  "InputName": "Choose a permission profile"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from MultiProductUserManagement:addUserProductPermissionProfilesByEmail method:"
+        },
+        {
+          "ExampleNumber": 9,
+          "ExampleName": "Delete user product permission profiles using an email address",
+          "ExampleDescription": "Demonstrates how to list and delete DocuSign Admin user product permission profiles.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getuserproductpermissionprofilesbyemail",
+              "PathName": "MultiProductUserManagement::getUserProductPermissionProfilesByEmail"
+            },
+            {
+              "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/removeuserproductpermission",
+              "PathName": "MultiProductUserManagement::removeUserProductPermission"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 2,
+                "RedirectText": "<p>Problem: You do not have the user to change permissions for. Go to example#2 and create one: <a {0}>create active CLM/eSign User.</a> <br/></p>"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Delete user product permission profile for the following email: {0}</p>",
+              "Inputs": [
+                {
+                  "InputName": "Choose which product permission profile you would like to delete"
+                }
+              ]
+            }
+          ],
+          "ResultsPageText": "Results from MultiProductUserManagement:removeUserProductPermission method:"
+        }
+      ]
+    }
+  ]
+}
