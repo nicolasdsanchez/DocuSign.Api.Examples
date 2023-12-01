@@ -4,11 +4,11 @@
 
 namespace ESignature.Examples
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using DocuSign.eSign.Model;
+    using System;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Used to generate an envelope and allow user to sign it directly from the app without having to open an email.

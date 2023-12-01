@@ -4,8 +4,6 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System;
-    using System.Net;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;

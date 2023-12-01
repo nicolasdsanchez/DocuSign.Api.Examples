@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Views
 {
-    using System;
-    using System.Runtime.InteropServices;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
+    using System;
+    using System.Runtime.InteropServices;
 
     [Area("eSignature")]
     [Route("eg044")]

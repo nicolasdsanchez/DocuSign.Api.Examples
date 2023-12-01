@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DocuSign.CodeExamples.Common;
+﻿using DocuSign.CodeExamples.Common;
 using ESignature.Examples;
 using Xunit;
 

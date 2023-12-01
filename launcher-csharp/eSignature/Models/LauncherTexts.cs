@@ -4,15 +4,37 @@
 
 namespace DocuSign.CodeExamples.Models
 {
+
+    /* Unmerged change from project 'Quick_ACG'
+    Before:
+        using System;
+        using System.Globalization;
+        using System.Net.Http;
+        using System.Threading;
+        using System.Threading.Tasks;
+        using DocuSign.CodeExamples.Common;
+        using DocuSign.CodeExamples.ESignature.Models;
+        using Microsoft.Extensions.Configuration;
+        using Newtonsoft.Json;
+    After:
+        using DocuSign.CodeExamples.Common;
+        using DocuSign.CodeExamples.ESignature.Models;
+        using Microsoft.Extensions.Configuration;
+        using Newtonsoft.Json;
+        using System;
+        using System.Globalization;
+        using System.Net.Http;
+        using Microsoft.Extensions.Threading;
+        using System.Threading.Json;
+    */
+    using DocuSign.CodeExamples.ESignature.Models;
+    using Microsoft.Extensions.Configuration;
+    using Newtonsoft.Json;
     using System;
     using System.Globalization;
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
-    using DocuSign.CodeExamples.Common;
-    using DocuSign.CodeExamples.ESignature.Models;
-    using Microsoft.Extensions.Configuration;
-    using Newtonsoft.Json;
 
     public class LauncherTexts
     {

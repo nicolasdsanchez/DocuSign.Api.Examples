@@ -4,10 +4,9 @@
 
 namespace DocuSign.CodeExamples.Monitor.Examples
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.Monitor.Api;
     using DocuSign.Monitor.Client;
+    using System.Collections.Generic;
     using static DocuSign.Monitor.Api.DataSetApi;
 
     public class GetMonitoringDataFunc

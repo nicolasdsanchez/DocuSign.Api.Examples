@@ -3,12 +3,12 @@
 // </copyright>
 namespace ESignature.Examples
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using DocuSign.eSign.Model;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using OAuth = DocuSign.eSign.Client.Auth.OAuth;
 
     public static class SharedAccess

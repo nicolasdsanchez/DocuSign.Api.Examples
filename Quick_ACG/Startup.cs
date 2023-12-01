@@ -109,16 +109,14 @@ namespace DocuSign.QuickACG
                         userJObject.Add("refresh_token", context.RefreshToken);
                         userJObject.Add("expires_in", DateTime.Now.Add(context.ExpiresIn.Value).ToString());
 
-                        using (JsonDocument payload = JsonDocument.Parse(userJObject.ToString()))
-                        {
-                            context.RunClaimActions(payload.RootElement);
-                        }
+                        using JsonDocument payload = JsonDocument.Parse(userJObject.ToString());
+                        context.RunClaimActions(payload.RootElement);
                     }
                 };
             });
         }
 
-        #nullable enable
+#nullable enable
         private string? ExtractDefaultAccountValue(JsonElement obj, string key)
         {
             if (!obj.TryGetProperty("accounts", out var accounts))
@@ -166,7 +164,7 @@ namespace DocuSign.QuickACG
 
             return keyValue;
         }
-        #nullable disable
+#nullable disable
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

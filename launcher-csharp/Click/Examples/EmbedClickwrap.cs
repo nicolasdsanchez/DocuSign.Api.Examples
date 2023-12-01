@@ -4,10 +4,10 @@
 
 namespace DocuSign.Click.Examples
 {
-    using System.Collections.Generic;
     using DocuSign.Click.Api;
     using DocuSign.Click.Client;
     using DocuSign.Click.Model;
+    using System.Collections.Generic;
 
     public class EmbedClickwrap
     {

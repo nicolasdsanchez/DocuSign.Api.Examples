@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace DocuSign.CodeExamples.Controllers
 {

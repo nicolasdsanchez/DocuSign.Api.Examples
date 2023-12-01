@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System;
-    using System.Text.RegularExpressions;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.ESignature.Models;
     using DocuSign.CodeExamples.Models;
     using DocuSign.CodeExamples.Views;
     using Microsoft.AspNetCore.Mvc;
+    using System;
+    using System.Text.RegularExpressions;
 
     public abstract class EgController : Controller
     {

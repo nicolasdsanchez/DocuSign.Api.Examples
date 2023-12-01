@@ -4,10 +4,10 @@
 
 namespace ESignature.Examples
 {
-    using System.Linq;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using DocuSign.eSign.Model;
+    using System.Linq;
 
     public static class ChangePermissionSingleSetting
     {

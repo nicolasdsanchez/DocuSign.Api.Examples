@@ -4,10 +4,10 @@
 
 namespace DocuSign.Admin.Examples
 {
-    using System;
     using DocuSign.Admin.Api;
     using DocuSign.Admin.Client;
     using DocuSign.Admin.Model;
+    using System;
 
     public class RetrieveDocuSignProfileByEmailAddress
     {

@@ -4,11 +4,11 @@
 
 namespace DocuSign.Rooms.Examples
 {
-    using System.Collections.Generic;
-    using System.Linq;
     using DocuSign.Rooms.Api;
     using DocuSign.Rooms.Client;
     using DocuSign.Rooms.Model;
+    using System.Collections.Generic;
+    using System.Linq;
 
     public class CreateRoomWithData
     {

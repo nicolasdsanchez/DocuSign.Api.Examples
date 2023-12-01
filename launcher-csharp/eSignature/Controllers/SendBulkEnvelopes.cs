@@ -4,11 +4,11 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
+    using System;
 
     [Area("eSignature")]
     [Route("Eg031")]

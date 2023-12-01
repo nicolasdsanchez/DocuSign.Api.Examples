@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System.Diagnostics;
-    using System.Net;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
+    using System.Diagnostics;
+    using System.Net;
 
     public class HomeController : Controller
     {

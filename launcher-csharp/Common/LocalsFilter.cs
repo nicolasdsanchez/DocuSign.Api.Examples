@@ -4,14 +4,13 @@
 
 namespace DocuSign.CodeExamples.Common
 {
-    using System;
-    using System.Linq;
-    using System.Security.Claims;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Filters;
-    using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Configuration;
+    using System;
+    using System.Linq;
+    using System.Security.Claims;
 
     public class LocalsFilter : IActionFilter
     {

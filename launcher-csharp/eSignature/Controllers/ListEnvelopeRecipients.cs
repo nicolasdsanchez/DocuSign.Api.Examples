@@ -5,7 +5,6 @@
 namespace DocuSign.CodeExamples.Controllers
 {
     using DocuSign.CodeExamples.Common;
-    using DocuSign.CodeExamples.ESignature.Models;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;

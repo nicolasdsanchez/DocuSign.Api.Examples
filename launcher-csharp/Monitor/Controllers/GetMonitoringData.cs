@@ -4,12 +4,11 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System.Linq;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
-    using DocuSign.CodeExamples.Monitor.Examples;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
+    using System.Linq;
 
     [Area("Monitor")]
     [Route("meg001")]

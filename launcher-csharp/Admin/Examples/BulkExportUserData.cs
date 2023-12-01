@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Admin.Examples
 {
+    using DocuSign.Admin.Api;
+    using DocuSign.Admin.Client;
+    using DocuSign.Admin.Model;
     using System;
     using System.IO;
     using System.Linq;
     using System.Net;
-    using DocuSign.Admin.Api;
-    using DocuSign.Admin.Client;
-    using DocuSign.Admin.Model;
 
     public class BulkExportUserData
     {

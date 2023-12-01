@@ -5,9 +5,6 @@
 namespace ESignature.Examples
 {
     using System.Collections.Generic;
-    using DocuSign.eSign.Api;
-    using DocuSign.eSign.Client;
-    using DocuSign.eSign.Model;
 
     public static class ListEnvelopeDocuments
     {

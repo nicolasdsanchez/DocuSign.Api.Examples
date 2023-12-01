@@ -4,11 +4,11 @@
 
 namespace ESignature.Examples
 {
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.IO;
     using System.Net;
     using System.Text;
-    using Newtonsoft.Json;
 
     public static class CreateEnvelopeWithMultipleDocumentTypes
     {

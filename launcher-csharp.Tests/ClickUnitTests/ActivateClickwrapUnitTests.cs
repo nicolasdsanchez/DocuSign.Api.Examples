@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using DocuSign.Click.Examples;
+﻿using DocuSign.Click.Examples;
 using DocuSign.Click.Model;
 using DocuSign.CodeExamples.Common;
 using FluentAssertions;

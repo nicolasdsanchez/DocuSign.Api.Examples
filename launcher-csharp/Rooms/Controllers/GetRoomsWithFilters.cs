@@ -4,15 +4,14 @@
 
 namespace DocuSign.CodeExamples.Rooms.Controllers
 {
-    using System.Globalization;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
     using DocuSign.CodeExamples.Rooms.Models;
     using DocuSign.Rooms.Client;
-    using DocuSign.Rooms.Examples;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
+    using System.Globalization;
 
     [Area("Rooms")]
     [Route("reg005")]

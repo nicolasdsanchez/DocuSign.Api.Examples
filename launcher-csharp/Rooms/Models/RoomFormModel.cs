@@ -4,9 +4,9 @@
 
 namespace DocuSign.CodeExamples.Rooms.Models
 {
+    using DocuSign.Rooms.Model;
     using System;
     using System.Collections.Generic;
-    using DocuSign.Rooms.Model;
 
     public class RoomFormModel
     {

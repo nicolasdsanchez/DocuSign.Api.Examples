@@ -4,9 +4,9 @@
 
 namespace DocuSign.CodeExamples.Common
 {
-    using System;
     using DocuSign.CodeExamples.Controllers;
     using Microsoft.AspNetCore.Mvc.Filters;
+    using System;
 
     public class SetViewBagAttribute : ActionFilterAttribute
     {

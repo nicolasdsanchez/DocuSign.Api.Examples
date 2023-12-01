@@ -4,11 +4,11 @@
 
 namespace DocuSign.CodeExamples.Common
 {
-    using System;
     using DocuSign.CodeExamples.Controllers;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Filters;
     using Microsoft.Extensions.DependencyInjection;
+    using System;
 
     public class MustAuthenticateAttribute : ActionFilterAttribute
     {

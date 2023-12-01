@@ -4,15 +4,13 @@
 
 namespace DocuSign.CodeExamples.Admin.Controllers
 {
-    using System;
-    using System.IO;
     using DocuSign.Admin.Client;
-    using DocuSign.CodeExamples.Admin.Examples;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
+    using System.IO;
 
     [Area("Admin")]
     [Route("aeg003")]

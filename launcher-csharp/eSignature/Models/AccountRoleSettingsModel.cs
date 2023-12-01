@@ -4,12 +4,8 @@
 
 namespace DocuSign.CodeExamples.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
-    using System.Threading.Tasks;
     using DocuSign.eSign.Model;
+    using System.ComponentModel;
 
     public class AccountRoleSettingsModel
     {

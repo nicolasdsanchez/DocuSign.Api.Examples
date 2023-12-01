@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using DocuSign.CodeExamples.Common;
+﻿using DocuSign.CodeExamples.Common;
 using DocuSign.eSign.Api;
 using DocuSign.eSign.Client;
 using DocuSign.eSign.Model;
 using ESignature.Examples;
 using FluentAssertions;
+using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace launcher_csharp.Tests.eSignatureUnitTests

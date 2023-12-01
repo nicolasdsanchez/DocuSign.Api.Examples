@@ -4,10 +4,10 @@
 
 namespace DocuSign.CodeExamples.Authentication
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.CodeExamples.Common;
     using DocuSign.eSign.Client;
+    using System;
+    using System.Collections.Generic;
     using static DocuSign.eSign.Client.Auth.OAuth;
 
     public static class JwtAuth

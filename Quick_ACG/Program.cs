@@ -28,7 +28,7 @@ namespace DocuSign.QuickACG
                 {
                     path = Path.GetFullPath(@"..\\launcher-csharp\\appsettings.json");
                 }
-                 
+
 
                 config.AddJsonFile(path,
                                    optional: false,

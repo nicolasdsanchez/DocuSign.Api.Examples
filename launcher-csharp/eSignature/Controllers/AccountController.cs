@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
     using DocuSign.eSign.Client;
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
+    using System;
 
     [Route("ds/[action]")]
     public class AccountController : Controller

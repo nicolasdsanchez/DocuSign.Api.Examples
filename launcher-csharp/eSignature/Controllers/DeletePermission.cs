@@ -4,13 +4,13 @@
 
 namespace DocuSign.CodeExamples.Controllers
 {
-    using System.Linq;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Models;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
+    using System.Linq;
 
     [Area("eSignature")]
     [Route("Eg027")]

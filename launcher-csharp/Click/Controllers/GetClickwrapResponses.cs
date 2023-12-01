@@ -5,7 +5,6 @@
 namespace DocuSign.CodeExamples.Click.Controllers
 {
     using DocuSign.Click.Client;
-    using DocuSign.Click.Examples;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;

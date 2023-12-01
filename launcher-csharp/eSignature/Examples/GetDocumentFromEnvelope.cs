@@ -4,11 +4,11 @@
 
 namespace ESignature.Examples
 {
+    using DocuSign.eSign.Api;
+    using DocuSign.eSign.Client;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using DocuSign.eSign.Api;
-    using DocuSign.eSign.Client;
 
     public static class GetDocumentFromEnvelope
     {

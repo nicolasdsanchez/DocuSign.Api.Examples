@@ -4,12 +4,12 @@
 
 namespace DocuSign.CodeExamples.Admin.Examples
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.Admin.Model;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using DocuSign.eSign.Model;
+    using System;
+    using System.Collections.Generic;
 
     public class CreateUser
     {

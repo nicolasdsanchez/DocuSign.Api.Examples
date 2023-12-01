@@ -4,14 +4,13 @@
 
 namespace DocuSign.CodeExamples.Click.Controllers
 {
-    using System.Text;
     using DocuSign.Click.Client;
-    using DocuSign.Click.Examples;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
     using Microsoft.AspNetCore.Mvc;
     using Newtonsoft.Json;
+    using System.Text;
 
     [Area("Click")]
     [Route("ceg004")]

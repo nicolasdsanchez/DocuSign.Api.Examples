@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using DocuSign.Click.Examples;
+﻿using DocuSign.Click.Examples;
 using DocuSign.Click.Model;
 using DocuSign.CodeExamples.Common;
 using FluentAssertions;
+using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace launcher_csharp.Tests.ClickUnitTests

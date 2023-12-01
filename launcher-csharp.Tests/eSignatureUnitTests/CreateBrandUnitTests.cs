@@ -1,7 +1,7 @@
-﻿using System;
-using DocuSign.CodeExamples.Common;
+﻿using DocuSign.CodeExamples.Common;
 using DocuSign.eSign.Model;
 using ESignature.Examples;
+using System;
 using Xunit;
 
 namespace launcher_csharp.Tests.eSignatureUnitTests

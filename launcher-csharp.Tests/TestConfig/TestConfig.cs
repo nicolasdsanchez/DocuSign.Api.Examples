@@ -1,13 +1,13 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-using System.Runtime.InteropServices;
-using DocuSign.Click.Model;
-using System.Text;
+﻿using DocuSign.Click.Model;
 using DocuSign.CodeExamples.Common;
 using DocuSign.eSign.Client;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Text;
 
 namespace launcher_csharp.Tests
 {

@@ -4,11 +4,11 @@
 
 namespace ESignature.Examples
 {
-    using System.Collections.Generic;
     using DocuSign.CodeExamples.Models;
     using DocuSign.eSign.Api;
     using DocuSign.eSign.Client;
     using DocuSign.eSign.Model;
+    using System.Collections.Generic;
 
     internal static class ListEnvelopeDocumentsHelpers
     {

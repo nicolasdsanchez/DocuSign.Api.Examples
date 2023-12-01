@@ -1,9 +1,9 @@
-﻿using System;
-using DocuSign.CodeExamples.Common;
+﻿using DocuSign.CodeExamples.Common;
 using DocuSign.CodeExamples.Models;
 using DocuSign.eSign.Model;
 using ESignature.Examples;
 using FluentAssertions;
+using System;
 using Xunit;
 
 namespace launcher_csharp.Tests.eSignatureUnitTests
@@ -50,33 +50,33 @@ namespace launcher_csharp.Tests.eSignatureUnitTests
         public CreatePermissionProfile.AccountRoleSettingsExtension PrepareAccountRoleSettings(PermissionProfileModel permissionProfileModel)
         {
             var accountRoleSettings = new CreatePermissionProfile.AccountRoleSettingsExtension
-                {
-                    UseNewDocuSignExperienceInterface = "1",
-                    EnableSequentialSigningInterface = true.ToString(),
-                    PowerFormRole = "admin",
-                    VaultingMode = "none",
-                    AllowTaggingInSendAndCorrect = true.ToString(),
-                    AllowedAddressBookAccess = "personalAndShared",
-                    AllowedTemplateAccess = "share",
-                    SigningUiVersion = "2",
-                    AllowBulkSending = permissionProfileModel.AccountRoleSettingsModel.AllowBulkSending.ToString(),
-                    AllowEnvelopeSending = permissionProfileModel.AccountRoleSettingsModel.AllowEnvelopeSending.ToString(),
-                    AllowSignerAttachments = permissionProfileModel.AccountRoleSettingsModel.AllowSignerAttachments.ToString(),
-                    AllowApiAccess = permissionProfileModel.AccountRoleSettingsModel.AllowApiAccess.ToString(),
-                    AllowApiAccessToAccount = permissionProfileModel.AccountRoleSettingsModel.AllowApiAccessToAccount.ToString(),
-                    AllowApiSequentialSigning = permissionProfileModel.AccountRoleSettingsModel.AllowApiSequentialSigning.ToString(),
-                    EnableApiRequestLogging = permissionProfileModel.AccountRoleSettingsModel.EnableApiRequestLogging.ToString(),
-                    AllowApiSendingOnBehalfOfOthers = permissionProfileModel.AccountRoleSettingsModel.AllowApiSendingOnBehalfOfOthers.ToString(),
-                    AllowWetSigningOverride = permissionProfileModel.AccountRoleSettingsModel.AllowWetSigningOverride.ToString(),
-                    EnableRecipientViewingNotifications = permissionProfileModel.AccountRoleSettingsModel.EnableRecipientViewingNotifications.ToString(),
-                    ReceiveCompletedSelfSignedDocumentsAsEmailLinks = permissionProfileModel.AccountRoleSettingsModel.ReceiveCompletedSelfSignedDocumentsAsEmailLinks.ToString(),
-                    UseNewSendingInterface = permissionProfileModel.AccountRoleSettingsModel.UseNewSendingInterface.ToString(),
-                    AllowDocuSignDesktopClient = permissionProfileModel.AccountRoleSettingsModel.AllowDocuSignDesktopClient.ToString(),
-                    AllowSendersToSetRecipientEmailLanguage = permissionProfileModel.AccountRoleSettingsModel.AllowSendersToSetRecipientEmailLanguage.ToString(),
-                    AllowVaulting = permissionProfileModel.AccountRoleSettingsModel.AllowVaulting.ToString(),
-                    AllowedToBeEnvelopeTransferRecipient = permissionProfileModel.AccountRoleSettingsModel.AllowedToBeEnvelopeTransferRecipient.ToString(),
-                    EnableTransactionPointIntegration = permissionProfileModel.AccountRoleSettingsModel.EnableTransactionPointIntegration.ToString()
-                };
+            {
+                UseNewDocuSignExperienceInterface = "1",
+                EnableSequentialSigningInterface = true.ToString(),
+                PowerFormRole = "admin",
+                VaultingMode = "none",
+                AllowTaggingInSendAndCorrect = true.ToString(),
+                AllowedAddressBookAccess = "personalAndShared",
+                AllowedTemplateAccess = "share",
+                SigningUiVersion = "2",
+                AllowBulkSending = permissionProfileModel.AccountRoleSettingsModel.AllowBulkSending.ToString(),
+                AllowEnvelopeSending = permissionProfileModel.AccountRoleSettingsModel.AllowEnvelopeSending.ToString(),
+                AllowSignerAttachments = permissionProfileModel.AccountRoleSettingsModel.AllowSignerAttachments.ToString(),
+                AllowApiAccess = permissionProfileModel.AccountRoleSettingsModel.AllowApiAccess.ToString(),
+                AllowApiAccessToAccount = permissionProfileModel.AccountRoleSettingsModel.AllowApiAccessToAccount.ToString(),
+                AllowApiSequentialSigning = permissionProfileModel.AccountRoleSettingsModel.AllowApiSequentialSigning.ToString(),
+                EnableApiRequestLogging = permissionProfileModel.AccountRoleSettingsModel.EnableApiRequestLogging.ToString(),
+                AllowApiSendingOnBehalfOfOthers = permissionProfileModel.AccountRoleSettingsModel.AllowApiSendingOnBehalfOfOthers.ToString(),
+                AllowWetSigningOverride = permissionProfileModel.AccountRoleSettingsModel.AllowWetSigningOverride.ToString(),
+                EnableRecipientViewingNotifications = permissionProfileModel.AccountRoleSettingsModel.EnableRecipientViewingNotifications.ToString(),
+                ReceiveCompletedSelfSignedDocumentsAsEmailLinks = permissionProfileModel.AccountRoleSettingsModel.ReceiveCompletedSelfSignedDocumentsAsEmailLinks.ToString(),
+                UseNewSendingInterface = permissionProfileModel.AccountRoleSettingsModel.UseNewSendingInterface.ToString(),
+                AllowDocuSignDesktopClient = permissionProfileModel.AccountRoleSettingsModel.AllowDocuSignDesktopClient.ToString(),
+                AllowSendersToSetRecipientEmailLanguage = permissionProfileModel.AccountRoleSettingsModel.AllowSendersToSetRecipientEmailLanguage.ToString(),
+                AllowVaulting = permissionProfileModel.AccountRoleSettingsModel.AllowVaulting.ToString(),
+                AllowedToBeEnvelopeTransferRecipient = permissionProfileModel.AccountRoleSettingsModel.AllowedToBeEnvelopeTransferRecipient.ToString(),
+                EnableTransactionPointIntegration = permissionProfileModel.AccountRoleSettingsModel.EnableTransactionPointIntegration.ToString()
+            };
 
             return accountRoleSettings;
         }

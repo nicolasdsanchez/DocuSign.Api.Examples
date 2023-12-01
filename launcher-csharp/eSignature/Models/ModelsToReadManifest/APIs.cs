@@ -4,8 +4,8 @@
 
 namespace DocuSign.CodeExamples.ESignature.Models
 {
-    using System.Collections.Generic;
     using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     public class ApIs
     {
@@ -14,5 +14,5 @@ namespace DocuSign.CodeExamples.ESignature.Models
 
         [JsonProperty("Name")]
         public string Name { get; set; }
-}
+    }
 }

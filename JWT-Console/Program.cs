@@ -1,16 +1,15 @@
 ﻿using DocuSign.CodeExamples.Authentication;
+using DocuSign.CodeExamples.Common;
 using DocuSign.eSign.Client;
-using static DocuSign.eSign.Client.Auth.OAuth;
-using static DocuSign.eSign.Client.Auth.OAuth.UserInfo;
 using ESignature.Examples;
 using System;
-using System.Diagnostics;
 using System.Configuration;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Web;
-using System.IO;
-using DocuSign.CodeExamples.Common;
+using static DocuSign.eSign.Client.Auth.OAuth;
+using static DocuSign.eSign.Client.Auth.OAuth.UserInfo;
 
 namespace DocuSign.CodeExamples.JWT_Console
 {

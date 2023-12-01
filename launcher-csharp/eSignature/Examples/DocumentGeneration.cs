@@ -4,13 +4,13 @@
 
 namespace ESignature.Examples
 {
+    using DocuSign.eSign.Api;
+    using DocuSign.eSign.Client;
+    using DocuSign.eSign.Model;
     using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
-    using DocuSign.eSign.Api;
-    using DocuSign.eSign.Client;
-    using DocuSign.eSign.Model;
 
     public class DocumentGeneration
     {

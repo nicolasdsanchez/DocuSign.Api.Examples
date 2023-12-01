@@ -1,10 +1,10 @@
+using DocuSign.CodeExamples.Authentication;
+using DocuSign.CodeExamples.Common;
 using DocuSign.eSign.Client;
 using DocuSign.eSign.Client.Auth;
 using System;
-using Xunit;
 using System.Runtime.InteropServices;
-using DocuSign.CodeExamples.Authentication;
-using DocuSign.CodeExamples.Common;
+using Xunit;
 
 namespace launcher_csharp.Tests
 {
@@ -100,7 +100,7 @@ namespace launcher_csharp.Tests
                 caret = "^";
             }
 
-            return "https://" + testConfig.OAuthBasePath + "/oauth/auth?response_type=code" + caret + "&scope=" + scopes 
+            return "https://" + testConfig.OAuthBasePath + "/oauth/auth?response_type=code" + caret + "&scope=" + scopes
                    + caret + "&client_id=" + testConfig.ClientId + caret + "&redirect_uri=" + RedirectUrl;
         }
     }

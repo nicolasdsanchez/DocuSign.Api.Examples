@@ -4,9 +4,16 @@
 
 namespace DocuSign.CodeExamples.ESignature.Models
 {
-    using System.Collections.Generic;
-    using DocuSign.CodeExamples.ESignature.Models;
+
+    /* Unmerged change from project 'Quick_ACG'
+    Before:
+        using System.Collections.Generic;
+        using DocuSign.CodeExamples.ESignature.Models;
+    After:
+        using DocuSign.CodeExamples.ESignature.Models;
+    */
     using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     public class ManifestGroup
     {

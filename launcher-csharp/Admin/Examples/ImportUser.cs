@@ -4,12 +4,12 @@
 
 namespace DocuSign.CodeExamples.Admin.Examples
 {
-    using System;
-    using System.IO;
-    using System.Text;
     using DocuSign.Admin.Api;
     using DocuSign.Admin.Client;
     using DocuSign.Admin.Model;
+    using System;
+    using System.IO;
+    using System.Text;
 
     public class ImportUser
     {

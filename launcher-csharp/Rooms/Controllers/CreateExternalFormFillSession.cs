@@ -4,8 +4,6 @@
 
 namespace DocuSign.CodeExamples.Rooms.Controllers
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
@@ -13,6 +11,8 @@ namespace DocuSign.CodeExamples.Rooms.Controllers
     using DocuSign.Rooms.Client;
     using DocuSign.Rooms.Model;
     using Microsoft.AspNetCore.Mvc;
+    using System;
+    using System.Collections.Generic;
 
     [Area("Rooms")]
     [Route("reg006")]

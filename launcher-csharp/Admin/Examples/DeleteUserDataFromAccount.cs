@@ -4,11 +4,10 @@
 
 namespace DocuSign.Admin.Examples
 {
-    using System;
-    using System.Collections.Generic;
     using DocuSign.Admin.Api;
     using DocuSign.Admin.Client;
     using DocuSign.Admin.Model;
+    using System;
 
     public static class DeleteUserDataFromAccount
     {

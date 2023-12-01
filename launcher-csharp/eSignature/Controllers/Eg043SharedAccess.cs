@@ -4,7 +4,6 @@
 
 namespace DocuSign.CodeExamples.Views
 {
-    using System.Linq;
     using DocuSign.CodeExamples.Common;
     using DocuSign.CodeExamples.Controllers;
     using DocuSign.CodeExamples.Models;
@@ -15,6 +14,7 @@ namespace DocuSign.CodeExamples.Views
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
+    using System.Linq;
 
     [Area("eSignature")]
     [Route("Eg043")]

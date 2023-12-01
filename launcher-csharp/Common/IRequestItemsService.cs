@@ -4,9 +4,9 @@
 
 namespace DocuSign.CodeExamples
 {
-    using System;
     using DocuSign.CodeExamples.Models;
     using Microsoft.Extensions.Configuration;
+    using System;
 
     public interface IRequestItemsService
     {

@@ -4,8 +4,8 @@
 
 namespace DocuSign.CodeExamples.Rooms.Models
 {
-    using System.Collections.Generic;
     using DocuSign.Rooms.Model;
+    using System.Collections.Generic;
 
     public class OfficeAccessModel
     {
